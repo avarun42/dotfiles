@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-DOTFILES="$HOME/code/dotfiles"
+DOTFILES="$(cd "$(dirname "$0")" && pwd)"
 
 brew bundle --file="$DOTFILES/Brewfile.colima"
 

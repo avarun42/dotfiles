@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-DOTFILES="$HOME/code/dotfiles"
+DOTFILES="$(cd "$(dirname "$0")" && pwd)"
 
 # Install Homebrew
 if ! command -v brew &>/dev/null; then
