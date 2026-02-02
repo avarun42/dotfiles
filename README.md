@@ -40,6 +40,14 @@ Each module can also be run standalone (e.g. `setup-colima.sh`) to add it to an 
 | `ghostty/config` | `~/.config/ghostty/config` | Catppuccin theme, Lilex font, bar cursor |
 | `claude/CLAUDE.md` | `~/.claude/CLAUDE.md` | Claude Code preferences |
 
+## Post-setup
+
+Create `~/.ssh/allowed_signers` for git signature verification:
+
+```
+your-email ssh-ed25519 AAAA...
+```
+
 ## Machine-specific overrides
 
 Every config file sources a `.local` counterpart if it exists:
