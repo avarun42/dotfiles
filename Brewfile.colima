@@ -1,0 +1,5 @@
+brew "colima", restart_service: :changed
+brew "docker"
+brew "lima-additional-guestagents"
+brew "docker-buildx"
+brew "docker-compose"
