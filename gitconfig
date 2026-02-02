@@ -1,0 +1,18 @@
+[user]
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL5PyyLP76rKvXa3/6j/49Mo0WRQYkfqOaFTe6rwIl9K
+	name = Varun Arora
+	email = 5677408+avarun42@users.noreply.github.com
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[rerere]
+	enabled = true
+[include]
+	path = ~/.gitconfig.local
