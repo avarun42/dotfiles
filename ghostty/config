@@ -1,5 +1,4 @@
-theme = light:Catppuccin Latte,dark:Catppuccin Macchiato
+theme = Catppuccin Macchiato
 font-family = Lilex
 font-size = 13.5
 cursor-style = bar
-macos-titlebar-style = hidden
