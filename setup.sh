@@ -31,6 +31,7 @@ link() {
 }
 
 link zshenv "$HOME/.zshenv"
+link profile "$HOME/.profile"
 link zprofile "$HOME/.zprofile"
 link zshrc "$HOME/.zshrc"
 link gitconfig "$HOME/.gitconfig"
