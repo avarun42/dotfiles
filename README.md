@@ -34,7 +34,7 @@ Each module can also be run standalone (e.g. `setup-colima.sh`) to add it to an 
 |---|---|---|
 | `zshenv` | `~/.zshenv` | PATH for uv, telemetry opt-out |
 | `zprofile` | `~/.zprofile` | Homebrew, mise shims (non-interactive) |
-| `zshrc` | `~/.zshrc` | History, completions, mise, skim + fd, aliases |
+| `zshrc` | `~/.zshrc` | History, completions, mise, skim + fd, zoxide, aliases |
 | `gitconfig` | `~/.gitconfig` | 1Password commit signing, rebase on pull, rerere |
 | `ssh_config` | `~/.ssh/config` | 1Password SSH agent |
 | `ghostty/config` | `~/.config/ghostty/config` | Catppuccin theme, Lilex font, bar cursor |

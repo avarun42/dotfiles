@@ -19,6 +19,8 @@ eval "$(mise activate zsh)"
 SKIM_CTRL_T_COMMAND="fd --type f --hidden --exclude .git"
 SKIM_ALT_C_COMMAND="fd --type d --hidden --exclude .git"
 eval "$(sk --shell zsh --shell-bindings)"
+eval "$(zoxide init zsh)"
+function __zoxide_zi() { local result; result="$(zoxide query -l -- "$@" | sk)" && \builtin cd -- "$result"; }
 
 alias cat='bat'
 alias ls='eza'

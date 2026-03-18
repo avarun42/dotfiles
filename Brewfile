@@ -10,6 +10,7 @@ brew "mise"
 brew "ripgrep"
 brew "sk"
 brew "uv"
+brew "zoxide"
 brew "withgraphite/tap/graphite"
 
 # Casks
