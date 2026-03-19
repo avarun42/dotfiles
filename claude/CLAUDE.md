@@ -13,3 +13,17 @@
 # Shell
 
 - Use `rg` instead of `grep` and `fd` instead of `find` in shell commands.
+
+# Git email
+
+Before pushing to a repo under `avarun42`, verify `git config user.email` is `5677408+avarun42@users.noreply.github.com`. If it's not, set it (`git config user.email ...`) before committing/pushing. Work repos use the work email set as machine default in `~/.gitconfig.local`.
+
+# Git history rewriting
+
+When rewriting commits (e.g. changing author email), signatures become invalid and rebasing to re-sign clobbers committer dates. The correct order is:
+
+1. `git filter-repo --mailmap` to rewrite author/email
+2. `git filter-repo --commit-callback 'commit.committer_date = commit.author_date'` to fix committer dates
+3. Re-sign with: `git rebase --root --exec 'GIT_COMMITTER_DATE="$(git log -1 --format=%ai)" git commit --amend --no-edit -S'`
+
+Key: use `%ai` (author date), NOT `%ci` (committer date) — the rebase overwrites committer dates before `--exec` runs. Also: `filter-repo` removes the origin remote and strips signatures.
