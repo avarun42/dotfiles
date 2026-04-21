@@ -38,6 +38,7 @@ link gitconfig "$HOME/.gitconfig"
 link ssh_config "$HOME/.ssh/config"
 link ghostty/config "$HOME/.config/ghostty/config"
 link claude/CLAUDE.md "$HOME/.claude/CLAUDE.md"
+link claude/settings.json "$HOME/.claude/settings.json"
 
 # macOS defaults
 defaults write NSGlobalDomain KeyRepeat -int 4
