@@ -42,6 +42,10 @@ link claude/CLAUDE.md "$HOME/.claude/CLAUDE.md"
 # macOS defaults
 defaults write NSGlobalDomain KeyRepeat -int 4
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write NSGlobalDomain com.apple.swipeScrollDirection -bool false
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+defaults write NSGlobalDomain com.apple.trackpad.scaling -float 1
 
 echo ""
 echo "Done. Log out and back in for keyboard settings to take effect."
