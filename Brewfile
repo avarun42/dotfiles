@@ -10,6 +10,7 @@ brew "mise"
 brew "ripgrep"
 brew "sk"
 brew "uv"
+brew "mas"
 brew "zoxide"
 brew "withgraphite/tap/graphite"
 
@@ -25,3 +26,6 @@ cask "monitorcontrol"
 cask "notion-calendar"
 cask "rectangle"
 cask "zed"
+
+# Mac App Store
+mas "Hand Mirror", id: 1502839586
