@@ -30,12 +30,14 @@ link() {
 	echo "Linked $dst → $src"
 }
 
+link shellenv "$HOME/.shellenv"
 link zshenv "$HOME/.zshenv"
 link profile "$HOME/.profile"
 link zprofile "$HOME/.zprofile"
 link zshrc "$HOME/.zshrc"
 link gitconfig "$HOME/.gitconfig"
 link ssh_config "$HOME/.ssh/config"
+link mise/config.toml "$HOME/.config/mise/config.toml"
 link ghostty/config "$HOME/.config/ghostty/config"
 link claude/CLAUDE.md "$HOME/.claude/CLAUDE.md"
 link claude/settings.json "$HOME/.claude/settings.json"

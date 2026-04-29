@@ -1,2 +1,1 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
-export PATH="$HOME/.local/share/mise/shims:$PATH"
+# reserved for login-only side effects that should fire in any shell

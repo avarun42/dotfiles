@@ -1,0 +1,13 @@
+# uv
+export PATH="$HOME/.local/bin:$PATH"
+
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# mise shims
+export PATH="$HOME/.local/share/mise/shims:$PATH"
+
+# Claude Code
+export DISABLE_TELEMETRY=1
+export DISABLE_ERROR_REPORTING=1
+export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1

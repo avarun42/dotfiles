@@ -32,11 +32,14 @@ Each module can also be run standalone (e.g. `setup-colima.sh`) to add it to an 
 
 | File | Target | What it does |
 |---|---|---|
-| `zshenv` | `~/.zshenv` | PATH for uv, telemetry opt-out |
-| `zprofile` | `~/.zprofile` | Homebrew, mise shims (non-interactive) |
+| `shellenv` | `~/.shellenv` | Shared POSIX env (package managers, tool flags) |
+| `zshenv` | `~/.zshenv` | Sources `~/.shellenv` for every zsh invocation |
+| `profile` | `~/.profile` | Reserved for login-only side effects (currently empty) |
+| `zprofile` | `~/.zprofile` | Sources `~/.profile` for zsh login shells |
 | `zshrc` | `~/.zshrc` | History, completions, mise, skim + fd, zoxide, aliases |
 | `gitconfig` | `~/.gitconfig` | 1Password commit signing, rebase on pull, rerere |
 | `ssh_config` | `~/.ssh/config` | 1Password SSH agent |
+| `mise/config.toml` | `~/.config/mise/config.toml` | mise-managed tools and shared env vars |
 | `ghostty/config` | `~/.config/ghostty/config` | Catppuccin theme, Lilex font, bar cursor |
 | `claude/CLAUDE.md` | `~/.claude/CLAUDE.md` | Claude Code preferences |
 

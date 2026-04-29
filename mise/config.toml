@@ -1,0 +1,8 @@
+[tools]
+bun = "latest"
+"github:MercuryTechnologies/mercury-cli" = "latest"
+node = "lts"
+python = "latest"
+
+[env]
+MERCURY_NO_UPDATE_CHECK = "1"
